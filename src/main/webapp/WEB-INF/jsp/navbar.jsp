@@ -9,6 +9,11 @@
 <html>
 <head>
     <title>导航条</title>
+    <style type="text/css" media="screen">
+        li:hover {
+            background-color: #BEBEBE;
+        }
+    </style>
 </head>
 <body>
 <!-- 导航标签 -->
