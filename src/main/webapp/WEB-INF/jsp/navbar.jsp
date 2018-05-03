@@ -16,8 +16,8 @@
     <ul class="nav navbar-nav navbar-right">
         <li class=""><a href="/">首页</a></li>
         <li><a href="#">新闻中心</a></li>
-        <li class="dropdown">
-            <a href="${pageContext.request.contextPath}/getAllproduct" class="dropdown-toggle" data-toggle="dropdown">产品中心 <span class="caret"></span></a>
+        <li class="dropdown" id="product">
+            <a href="${pageContext.request.contextPath}/getProduct" class="dropdown-toggle" >产品中心 <span class="caret"></span></a>
             <ul class="dropdown-menu">
                 <li><a href="#tab-chrome">Chrome</a></li>
                 <li><a href="#tab-firefox">Firefox</a></li>

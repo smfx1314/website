@@ -22,9 +22,6 @@
                     <i class="icon-chevron-down glyph-icon"></i>
                 </a>
                 <ul class="dropdown-menu-uu" style="display: none" id="ad_setting_ul">
-                    <li class="ad_setting_ul_li"> <a href="${pageContext.request.contextPath }/user/findUserInfo.do" target="menuFrame"><i class="icon-user glyph-icon"></i> 个人中心 </a> </li>
-                    <li class="ad_setting_ul_li"> <a href="javascript:;"><i class="icon-cog glyph-icon"></i> 设置 </a> </li>
-                    <li class="ad_setting_ul_li"> <a href="${pageContext.request.contextPath }/uploadPage.do"><i class="icon-cog glyph-icon"></i> 上传头像 </a> </li>
                     <li class="ad_setting_ul_li"> <a href="javascript:;"><i class="icon-signout glyph-icon"></i> <span class="font-bold">退出</span> </a> </li>
                 </ul>
             </div>
@@ -40,43 +37,33 @@
                 </ul>
             </li>
             <li class="childUlLi">
-                <a href="user.html"  target="menuFrame"> <i class="glyph-icon icon-reorder"></i>博客管理</a>
+                <a href="user.html"  target="menuFrame"> <i class="glyph-icon icon-reorder"></i>新闻中心</a>
                 <ul>
-                    <li><a href="${pageContext.request.contextPath }/admin/writeBlog.do" target="menuFrame"><i class="glyph-icon icon-chevron-right"></i>写博客</a></li>                   
-                    <li><a href="${pageContext.request.contextPath }/admin/blogInfoManager.do" target="menuFrame"><i class="glyph-icon icon-chevron-right"></i>博客信息管理</a></li>
-                    <li><a href="${pageContext.request.contextPath }/admin/blogTypeList.do" target="menuFrame"><i class="glyph-icon icon-chevron-right" ></i>博客类别管理</a></li>
+                    <li><a href="${pageContext.request.contextPath }/admin/writeBlog.do" target="menuFrame"><i class="glyph-icon icon-chevron-right"></i>新闻列表</a></li>
+                    <li><a href="${pageContext.request.contextPath }/admin/blogInfoManager.do" target="menuFrame"><i class="glyph-icon icon-chevron-right"></i>添加新闻</a></li>
                 </ul>
             </li>
             <li class="childUlLi">
-                <a href="role.html" target="menuFrame"> <i class="glyph-icon icon-reorder" target="menuFrame"></i>评论管理</a>
+                <a href="role.html" target="menuFrame"> <i class="glyph-icon icon-reorder" target="menuFrame"></i>产品中心</a>
                 <ul>
-                    <li><a href="#"><i class="glyph-icon icon-chevron-right"></i>评论审核</a></li>                
-                    <li><a href="#"><i class="glyph-icon icon-chevron-right"></i>评论信息管理</a></li>
+                    <li><a href="${pageContext.request.contextPath }/admin/getAllproduct" target="menuFrame"><i class="glyph-icon icon-chevron-right"></i>产品列表</a></li>
+                    <li><a href="${pageContext.request.contextPath }/admin/saveProductPage" target="menuFrame"><i class="glyph-icon icon-chevron-right"></i>添加产品</a></li>
                 </ul>
             </li>
             <li class="childUlLi">
-                <a href="#"> <i class="glyph-icon  icon-location-arrow"></i>系统管理</a>
+                <a href="#"> <i class="glyph-icon  icon-location-arrow"></i>留言板</a>
                 <ul>
-                    <li><a href="meunbox.html" target="menuFrame"><i class="glyph-icon icon-chevron-right"></i>友情链接</a></li>
-                    <!-- <li><a href="meunbox_add.html" target="menuFrame"><i class="glyph-icon icon-chevron-right"></i>运行商菜单</a></li>
-                    <li><a href="#" target="menuFrame"><i class="glyph-icon icon-chevron-right"></i>服务站菜单</a></li>
-                    <li><a href="#" target="menuFrame"><i class="glyph-icon icon-chevron-right"></i>商家菜单</a></li> -->
+                    <li><a href="meunbox.html" target="menuFrame" target="menuFrame"><i class="glyph-icon icon-chevron-right"></i>留言列表</a></li>
                 </ul>
             </li>
         </ul>
     </div>
     <!--菜单-->
     <div id="layout_right_content" class="layout_right_content">
-
-        <!-- <div class="route_bg">
-             <a href="#">首页</a>
-            <a href="#">欢迎页</a>
-        </div>  --> 
         <div class="mian_content">
             <div id="page_content">
                <iframe name="menuFrame" src="${pageContext.request.contextPath }/admin/welcome" style="overflow:visible;"
                         scrolling="yes" frameborder="no" width="100%" height="100%">
-				
 				</iframe>
             </div>
         </div>

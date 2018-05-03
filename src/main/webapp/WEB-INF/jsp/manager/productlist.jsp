@@ -8,25 +8,29 @@
     <!-- Bootstrap -->
     <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
 
-    <title>banner列表</title>
+    <title>产品列表</title>
 </head>
 <body>
 <div class="container">
-    <a class="btn btn-default" href="${pageContext.request.contextPath }/admin/saveBannerPage">添加</a>
     <table class="table table-bordered table-hover">
         <tr>
             <th>编号</th>
+            <th>名称</th>
             <th>图片</th>
+            <th>详情</th>
+            <%--<th>创建日期</th>--%>
             <th colspan="2">操作</th>
         </tr>
-        <c:forEach items="${banners }" var="banner">
+        <c:forEach items="${products }" var="product">
             <tr>
-                <th>${banner.id }</th>
+                <th>${product.id }</th>
+                <th>${product.name }</th>
                 <th>
-                    <img alt="" src="/image/${banner.imagepath }" style="height: 30px;width: 30px;">
+                    <img alt="" src="/image/${product.image }" style="height: 30px;width: 30px;">
                 </th>
-                <th>${banner.bannerdesc}</th>
-                <th><a href="${pageContext.request.contextPath }/admin/deleteBanner?id=${banner.id }">删除</a></th>
+                <th>${product.info}</th>
+                <%--<th>${product.releasetime}</th>--%>
+                <th><a href="${pageContext.request.contextPath }/admin/deleteProduct?id=${product.id }">删除</a></th>
             </tr>
         </c:forEach>
     </table>
